@@ -1,16 +1,16 @@
 <template>
-    <div :id="$style.app">
-        <h1>这是index页，包含主组件和子组件两个组件</h1>
-        <div :class="$style.block">这是主组件的block</div>
+    <div id="other">
+        <h1>这是other页：包含主组件和子组件两个组件</h1>
+        <div class="block">这是主组件的block</div>
         <Child></Child>
         <h1>
-            <a href="./other.html">点击进入没有应用css-module的other.html页面</a>
+            <a href="./index.html">点击进入应用css module构建的index.html页</a>
         </h1>
     </div>
 </template>
 
 <script>
-import Child from "./components/Child";
+import Child from "./components/Ohterchild";
 
 export default {
     name: "app",
@@ -20,8 +20,8 @@ export default {
 };
 </script>
 
-<style module>
-#app {
+<style>
+#other {
     text-align: center;
     color: #ffffff;
     margin-top: 60px;
