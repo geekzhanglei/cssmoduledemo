@@ -11,7 +11,8 @@ module.exports = {
         // css预设器配置项
         loaderOptions: {
             css: {
-                // local是本地路径，相对src；name是组件名；hash根据base64生成，取前八位；
+                // local是class的局部类名；name是组件名；hash根据base64生成，取前八位；
+                // localIdentName: '[local]_[name]',
                 localIdentName: '[local]_[name]_[hash:base64:8]',
                 camelCase: 'only'
             }
